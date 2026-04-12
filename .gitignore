@@ -209,4 +209,5 @@ __marimo__/
 
 *.pem
 aws_engine_processed/
-
+github.pages
+.DS_Store
