@@ -1,0 +1,23 @@
+#!/bin/bash --login
+#SBATCH --job-name="PointNet_train"
+#SBATCH --gres=gpu:v100:1
+#SBATCH --cpus-per-task=2
+#SBATCH --mem=40G 
+#SBATCH --time=00:03:00
+
+
+module purge
+module load Miniforge3
+
+conda activate tf_Jul2025
+conda list
+
+current_time=$(date +"%Y-%m-%d %H:%M:%S")
+echo "Script started at: $current_time"
+
+python test_pointnet.py
+
+current_time=$(date +"%Y-%m-%d %H:%M:%S")
+echo "Script finished at: $current_time"
+
+
