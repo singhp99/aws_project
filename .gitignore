@@ -211,3 +211,9 @@ __marimo__/
 aws_engine_processed/
 github.pages
 .DS_Store
+*.csv
+*.env
+*.png
+requirements_updated.txt
+requirements.txt
+*.pptx
